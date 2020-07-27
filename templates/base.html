@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+
+    <style>
+        body {
+            background-color: rgb(232, 238, 238);
+            margin: 2px;
+        }
+
+        .Welcome {
+            height: 20px;
+            font-size: 18px;
+        }
+
+        .form_link {
+            height: 20px;
+            font-size: 18px;
+            color: black;
+        }
+
+        .navbar {
+            display: flex;
+            height: 40px;
+            background-color: rgb(113, 113, 114);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .nav1 {
+            display: flex;
+            color: rgb(206, 201, 201);
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .form1 {
+            width: 850px;
+            height: 155px;
+        }
+
+        .Movies {
+            height: 220px;
+        }
+
+        .L2 {
+            height: 25px;
+        }
+
+        .L1 {
+            height: 20px;
+            font-size: 19px;
+        }
+        .Top_movies{
+
+            display: flex;
+            align-content: space-between;
+        }
+        .movies_list{
+            margin: 0px;
+            width: 500px;
+            
+        }
+        .genre_list{
+            margin: 0px;
+            width: 500px;
+
+        }
+        .list{
+            height: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="nav1" href="{{ url_for('index')}}"> home page </a>
+        <a class="nav1" href="https://github.com/chitresh28/SPAM_HAM_classifier"> Github_Code </a>
+        <a class="nav1" href="#"> vardhan.chitresh.28@gmail.com </a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

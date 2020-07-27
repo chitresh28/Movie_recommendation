@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="Result">
+    <h2> Top {{first}} movies are <br>
+    </h2>
+    <div class="Top_movies">
+       
+
+        <ol class="movies_list">
+            {% for word in first1 %}
+            <li class="list">{{word|capitalize}}</li>
+            {% endfor %}
+        </ol>
+   
+        <ol class="genre_list">
+           {% for word in first2 %}
+           <li class="list">Genre: {{word|capitalize}}</li>
+           {% endfor %}
+       </ol>
+    </div>
+     
+    <h2> 20 similar movies to #{{second}} are <br> </h2>
+    <div class="Top_movies">
+
+        <ol class="movies_list">
+            {% for word in second1 %}
+            <li class="list">{{word|capitalize}}</li>
+            {% endfor %}
+    
+        </ol>
+        <ol class="genre_list">
+            {% for word in second2 %}
+            <li class="list">Genre: {{word|capitalize}}</li>
+            {% endfor %}
+        </ol>
+    </div>
+    
+</div>
+
+{% endblock %}
